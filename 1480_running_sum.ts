@@ -35,17 +35,17 @@ export function runningSum02(nums: number[]): number[] {
 // Space Complexity O(n)
 
 export function runningSum03(nums: number[]): number[] {
-  let output = [];
+  let answer = [];
 
   for (let i = 0; i < nums.length; i++) {
-    output[i] = nums[i];
+    answer[i] = nums[i];
 
     for (let j = 0; j < i; j++) {
-      output[i] += nums[j];
+      answer[i] += nums[j];
     }
   }
 
-  return output;
+  return answer;
 }
 
 // Calculate Running Sum
