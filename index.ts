@@ -1,5 +1,6 @@
 import fizzBuzz from './412_fizz_buzz';
 import runningSum from './1480_running_sum';
+import stepsToZero from './1342_steps_to_zero';
 import maximumWeatlth from './1672_richest_customer_wealth';
 
 function main(data: { problem: number; input: any }) {
@@ -12,5 +13,8 @@ function main(data: { problem: number; input: any }) {
 
     case 412:
       return fizzBuzz(data.input);
+
+    case 1342:
+      return stepsToZero(data.input);
   }
 }
