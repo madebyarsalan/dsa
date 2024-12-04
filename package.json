@@ -1,0 +1,17 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Arsalan Ansari",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
