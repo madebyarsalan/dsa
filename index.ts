@@ -1,4 +1,5 @@
 import fizzBuzz from './412_fizz_buzz';
+import bubbleSort from './1_bubble_sort';
 import runningSum from './1480_running_sum';
 import canConstruct from './383_ransom_note';
 import stepsToZero from './1342_steps_to_zero';
@@ -24,5 +25,10 @@ function main(data: { problem: number; input: any }) {
 
     case 383:
       return canConstruct(data.input.ransomNote, data.input.magazine);
+
+    case 1:
+      return bubbleSort(data.input);
   }
 }
+
+console.log(main({ problem: 1, input: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0] }));
