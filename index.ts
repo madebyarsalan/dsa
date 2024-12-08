@@ -3,9 +3,10 @@ import bubbleSort from './1_bubble_sort';
 import runningSum from './1480_running_sum';
 import canConstruct from './383_ransom_note';
 import stepsToZero from './1342_steps_to_zero';
+import selectionSort from './2_selection_sort';
+import insertionSort from './3_insertion_sort';
 import middleNode from './876_mid_of_linked_list';
 import maximumWeatlth from './1672_richest_customer_wealth';
-import selectionSort from './2_selection_sort';
 
 function main(data: { problem: number; input: any }) {
   switch (data.problem) {
@@ -32,5 +33,8 @@ function main(data: { problem: number; input: any }) {
 
     case 2:
       return selectionSort(data.input);
+
+    case 3:
+      return insertionSort(data.input);
   }
 }
