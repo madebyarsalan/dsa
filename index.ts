@@ -5,6 +5,7 @@ import canConstruct from './383_ransom_note';
 import stepsToZero from './1342_steps_to_zero';
 import middleNode from './876_mid_of_linked_list';
 import maximumWeatlth from './1672_richest_customer_wealth';
+import selectionSort from './2_selection_sort';
 
 function main(data: { problem: number; input: any }) {
   switch (data.problem) {
@@ -28,7 +29,8 @@ function main(data: { problem: number; input: any }) {
 
     case 1:
       return bubbleSort(data.input);
+
+    case 2:
+      return selectionSort(data.input);
   }
 }
-
-console.log(main({ problem: 1, input: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0] }));
