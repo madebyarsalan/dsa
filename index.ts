@@ -6,6 +6,7 @@ import stepsToZero from './1342_steps_to_zero';
 import selectionSort from './2_selection_sort';
 import insertionSort from './3_insertion_sort';
 import middleNode from './876_mid_of_linked_list';
+import mergeSortedArray from './88_merge_sorted_arrays';
 import maximumWeatlth from './1672_richest_customer_wealth';
 
 function main(data: { problem: number; input: any }) {
@@ -36,5 +37,13 @@ function main(data: { problem: number; input: any }) {
 
     case 3:
       return insertionSort(data.input);
+
+    case 88:
+      return mergeSortedArray(
+        data.input.nums1,
+        data.input.m,
+        data.input.nums2,
+        data.input.n
+      );
   }
 }
