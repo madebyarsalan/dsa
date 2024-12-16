@@ -6,6 +6,7 @@ import stepsToZero from './1342_steps_to_zero';
 import selectionSort from './2_selection_sort';
 import insertionSort from './3_insertion_sort';
 import middleNode from './876_mid_of_linked_list';
+import fibonacciNumber from './5_fibonacci_number';
 import findDuplicates from './4_duplicates_in_array';
 import mergeSortedArray from './88_merge_sorted_arrays';
 import maximumWeatlth from './1672_richest_customer_wealth';
@@ -49,5 +50,8 @@ function main(data: { problem: number; input: any }) {
 
     case 4:
       return findDuplicates(data.input);
+
+    case 5:
+      return fibonacciNumber(data.input);
   }
 }
