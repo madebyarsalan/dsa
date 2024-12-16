@@ -10,6 +10,7 @@ import fibonacciNumber from './5_fibonacci_number';
 import findDuplicates from './4_duplicates_in_array';
 import mergeSortedArray from './88_merge_sorted_arrays';
 import maximumWeatlth from './1672_richest_customer_wealth';
+import rotateCounterClockwise from './6_rotate_counter_clockwise';
 
 function main(data: { problem: number; input: any }) {
   switch (data.problem) {
@@ -53,5 +54,8 @@ function main(data: { problem: number; input: any }) {
 
     case 5:
       return fibonacciNumber(data.input);
+
+    case 6:
+      return rotateCounterClockwise(data.input);
   }
 }
